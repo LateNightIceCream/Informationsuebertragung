@@ -1,32 +1,164 @@
-n = 5;
-m = 3;
+clear all;
 
-% generate a random 1 dim. matrix of ones and zeroes
-function M = OandZ(n, flipProbability)
+global n = 4;
+m = 2;
+
+#global hmin = 2^n/2^m; % = 2^(n-m)
+
+global hmin = 3;
+
+if(hmin > 2^n/2^m) 
+
+  %% error: hmin zu groß
+
+endif
+
+
+
+
+% generate table with decimals for algorithm
+global hamming_table = zeros(2^n);
+nums = zeros(n,1);
+
+for(i = 1:(2^n))
+  nums(i) = i-1;
+endfor
+
+for(i = 1:(2^n))
+
+  for(l = 1:(2^n))
   
-  % n:
-  % length of matrix/ number of bits
+    hamming_table(i,l) = hamDistDec(nums(i), nums(l));
   
-  % flipProbability:
-  % each bit's probability of flipping/being a 1
-  
-  % initialize M
-  M = zeros(1,n);
-  
-  for i=(1:n-1)
-    
-    % random float between 0 and 1 to decide wheter to flip a bit
-    randNum = rand(1);
-    
-    if(randNum < flipProbability)
-      
-      % flip bit
-      M(i) = 1;
-    
-    endif
- 
   endfor
+
+endfor
+
+hamming_table
+
+
+% check table values for hmin, get pair numbers/columns of that row
+function v = getPairValues( rowValue, columnValues )
+    
+   global hamming_table;
+   global n;
+   global hmin;
+    
+   pairValues = 0;
+    
+    % loop through columns
+    o = 0;
+    
+    for( k=1:length(columnValues) )
+   
+          p2 = hamming_table(rowValue+1, columnValues(k) + 1);
+          
+          if(p2 >= hmin) 
+          
+            o += 1;
+            
+            pairValues(o) = columnValues(k);
+          
+          endif
+    
+    endfor
+  
+  v = pairValues;
   
 endfunction
 
-f = OandZ(n, 0.1)
+
+
+base_value = 0;
+
+
+getPairValues( base_value, base_value:(2^n-1) )
+
+
+
+##base_pairs = getPairValues(base_value, base_value:(2^n-1));
+##
+##%%%
+##
+##currentPairs    = base_pairs;
+##currentRowValue = base_pairs(1);
+##
+##result(1) = base_value;
+##
+##i = 1;
+##
+##while( currentPairs != 0 ) # maybe change
+##
+##
+##  i+=1;
+##  
+##  currentRowValue = currentPairs(1);
+##  
+##  result(i) = currentRowValue;
+##  
+##  prevPairs    = currentPairs;
+##  
+##  
+##  currentPairs = getPairValues(currentRowValue, currentPairs( i:length(currentPairs) ) );
+##
+##  
+##  
+##  if(currentPairs == 0)
+##  
+##    result(i+1) = prevPairs(length(prevPairs)); % respect last value which does not produce further pairs
+##  
+##  endif
+##
+##endwhile
+##
+##% convert result to binary
+##
+##result
+##
+##c = de2bi(result, n, 'right-msb')
+
+
+
+
+#getPairValues(3, [2,4,5,6,7] )
+  
+
+
+
+
+
+% generate vector of valid code words
+##d = 0;
+##
+##for p = 2:2^m
+##  d(p,1) = (hmin + d(p-1));
+##endfor
+##
+##
+##c = de2bi(d, n, 'right-msb');
+##
+##
+##
+##%i = OandZ(m, 0.5); % informationsvektor i --> c codewortvektor (?)
+##f = OandZ(n, 1/n);  % fehlervektor f
+##
+##%
+##
+##G = c;
+##
+##i = 0;
+##
+##for k = 1:2^m
+##  i(k,1) = k;
+##endfor
+##
+##i = de2bi(i, m, 'right-msb');
+##
+##c = i'
+##
+##% Generator Matrix G
+##l = eye(m); % identity matrix (m x m)
+
+
+
+
