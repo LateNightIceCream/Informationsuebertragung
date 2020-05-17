@@ -1,13 +1,15 @@
 clear all;
 
-global n = 4;
-m = 2;
+global n    = 6;
+global m    = 3;
+global hmin = 4;
 
 #global hmin = 2^n/2^m; % = 2^(n-m)
 
-global hmin = 3;
+
 
 if(hmin > 2^n/2^m) 
+
 
   %% error: hmin zu groß
 
@@ -36,6 +38,7 @@ endfor
 
 hamming_table
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % check table values for hmin, get pair numbers/columns of that row
 function v = getPairValues( rowValue, columnValues )
@@ -68,11 +71,47 @@ function v = getPairValues( rowValue, columnValues )
 endfunction
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-base_value = 0;
+% find code containing the most codewords
 
+result = zeros(1);
 
-getPairValues( base_value, base_value:(2^n-1) )
+for (base_value = 0:(2^n-1))
+
+  % get code from table, starting at base_value
+  base_pairs = 1;
+  
+  compareValues = base_value:(2^n-1);
+
+  currentResult(1)  = base_value;
+  i = 2;
+  while( base_pairs != 0 )
+
+    base_pairs    = getPairValues( base_value, compareValues );
+
+    base_value    = base_pairs(1); % first element is new row value
+    
+    compareValues = base_pairs(2:length(base_pairs));
+    
+    currentResult(i) = base_value;
+    i+=1;
+    
+  endwhile
+  
+  
+  currentResult = currentResult(1:(length(currentResult)-1)) % remove last zero
+
+  if( length(currentResult) >= length(result) )
+  
+    result = currentResult
+    
+  endif
+
+endfor
+
+result
+de2bi(result, n, 'right-msb')
 
 
 
