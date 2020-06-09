@@ -1,0 +1,7 @@
+\frametitle{A Page}
+    \begin{lstlisting}
+      ...
+      xmue1 = mean(n1)
+      var1 = var(n1)
+      ...
+      \end{lstlisting}

@@ -4,24 +4,24 @@ clear all;
 dmin = 3;
 basicWords = [1 1 1;
               1 0 1;
-              1 1 0];
+              1 1 0;]
 
 %-------------------------
 
-G = getLinSysGeneratorMatrix(basicWords, dmin); % n
+G = getLinSysGeneratorMatrix(basicWords, dmin) % n
 
-i = [1 1 1];                   % Quellvektor
+i = [0 1 0];                   % Quellvektor
 
 c = mod( i * G, 2);            % codierter Informationsvektor
 
 %f = OandZ(columns(c), 0.1);    % Fehlervektor
-f = [0 0 0 0 1 0 ]
+f = [0 0 0 0 1 0];
 
-d = mod( c + f, 2);            % Empfangsvektor
+d = mod( c + f, 2);           % Empfangsvektor
 
-H = getLinSysParityMatrix(G);  % Kontrollmatrix
+H = getLinSysParityMatrix(G)  % Kontrollmatrix
 
-s = mod( d * H', 2)';          % syndrom, s = f * H'
+s = mod( d * H', 2)'          % syndrom, s = f * H'
 
 
 % Bestimmung der Fehlerposition
@@ -47,7 +47,7 @@ endfor
 
 d_corrected = mod(d + fdach, 2); % Berechnung der Korrektur
 
-idach = d_corrected(1:(columns(G)-rows(G))); % da systematischer code
+idach = d_corrected(1:(columns(G)-rows(G))); % Dekodierung, systematischer code
 
 disp("------------------------------")
 disp("Sender")
@@ -55,7 +55,6 @@ disp("------------------------------")
 disp("Informationswort:"), disp(i)
 disp("")
 disp("gesendetes Codewort:"), disp(c)
-
 
 disp("")
 disp("------------------------------")

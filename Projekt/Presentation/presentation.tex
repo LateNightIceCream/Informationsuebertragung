@@ -1,0 +1,107 @@
+\documentclass[aspectratio=1610]{beamer}
+
+% \mode<presentation>
+
+% \usefonttheme{professionalfonts} % using non standard fonts for beamer
+% \usefonttheme{serif} % default family is serif
+% \usepackage{fontspec}
+% \setmainfont{Liberation Serif}
+
+% \usetheme{bjeldbak}
+
+% \usefonttheme[onlylarge]{structuresmallcapsserif}
+% \usefonttheme[onlysmall]{structurebold}
+
+% \setbeamerfont{title}{shape=\itshape,family=\rmfamily}
+% \setbeamercolor{title}{fg=red!80!black}
+% \setbeamercolor{title}{fg=red!80!black,bg=red!20!white}
+
+% %Information to be included in the title page:
+% \title{Informationsübertragung}
+% \subtitle{Testataufgaben}
+% \author{Richard \textsc{Grünert}}
+% \institute{Hochschule Wismar}
+% \date{2020}
+
+
+% \input{../preamble}
+
+% \begin{document}
+
+
+% \frame{\titlepage}
+
+% \tableofcontents
+
+% \section{Aufgabe 1}
+% \begin{frame}
+% \frametitle{Aufgabe 1: Rauschsignale}
+% This is a text in the first frame. This is a text in the first frame. This is a text in the first frame.
+
+% \end{frame}
+
+% \section{Aufgabe 1}
+
+% \end{document}
+
+\input{colors}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\graphicspath{{graphics/}}
+
+\usepackage{listings,bera}
+\definecolor{keywords}{RGB}{255,0,90}
+\lstset{language=Matlab, keywordstyle=\color{red5}, commentstyle=\color{gray4}}
+
+\usetheme{bjeldbak}
+ \usepackage{fontspec}
+ \usepackage{tgheros}
+\setmainfont{TeX Gyre Heros}
+
+\usepackage{inconsolata}
+\setmonofont{Inconsolatazi4}
+\lstset{
+  language=C,
+  basicstyle=\ttfamily,
+  keywordstyle=\bfseries\color{hsblue},
+  identifierstyle=\color{black},
+  rulecolor=\color{gray1},
+  frame=single,
+  frameround=tttt,
+  %framesep=1.382em,
+  backgroundcolor=\color{gray0}
+}
+
+\title{Informationsübertragung}
+\subtitle{Testataufgaben}
+\author{Richard \color{hsblue}{\textsc{Grünert}}}
+\institute{Hochschule Wismar}
+\titlegraphic{
+  \includegraphics[width=0.1459\paperwidth]{logo}%\hspace*{0cm}
+}
+
+\begin{document}
+  {%
+    \setbeamertemplate{headline}{}
+    \frame{\titlepage}
+  }
+
+  \section{Aufgabe 1}
+  \begin{frame}{Aufgabe 1: Rauschanalyse}
+    It's working!
+    \[e^{i \pi} = -1\]
+  \end{frame}
+
+  \begin{frame}[fragile]
+    \frametitle{A Page}
+    \begin{lstlisting}
+      ...
+      xmue1 = mean(n1)
+      var1 = var(n1)
+      ...
+      \end{lstlisting}
+  \end{frame}
+
+  
+\end{document}
