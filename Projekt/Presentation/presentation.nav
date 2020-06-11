@@ -34,8 +34,23 @@
 \headcommand {\sectionentry {4}{Aufgabe 4}{12}{Aufgabe 4}{0}}
 \headcommand {\slideentry {4}{0}{1}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@partpages {1}{12}}
-\headcommand {\beamer@subsectionpages {13}{12}}
-\headcommand {\beamer@sectionpages {13}{12}}
-\headcommand {\beamer@documentpages {12}}
-\headcommand {\gdef \inserttotalframenumber {11}}
+\headcommand {\slideentry {4}{0}{2}{13/13}{}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\beamer@sectionpages {12}{13}}
+\headcommand {\beamer@subsectionpages {12}{13}}
+\headcommand {\sectionentry {5}{Aufgabe 5}{14}{Aufgabe 5}{0}}
+\headcommand {\beamer@sectionpages {14}{13}}
+\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\sectionentry {6}{Aufgabe 6}{14}{Aufgabe 6}{0}}
+\headcommand {\beamer@sectionpages {14}{13}}
+\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\sectionentry {7}{Aufgabe 7}{14}{Aufgabe 7}{0}}
+\headcommand {\slideentry {7}{0}{1}{14/14}{}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {7}{0}{2}{15/15}{}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\beamer@partpages {1}{15}}
+\headcommand {\beamer@subsectionpages {16}{15}}
+\headcommand {\beamer@sectionpages {16}{15}}
+\headcommand {\beamer@documentpages {15}}
+\headcommand {\gdef \inserttotalframenumber {14}}
