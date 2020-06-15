@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019/Arch Linux)  (format=lualatex 2020.5.2)  14 JUN 2020 12:18
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/Arch Linux)  (format=lualatex 2020.5.2)  15 JUN 2020 20:36
  restricted system commands enabled.
  file:line:error style messages enabled.
 **presentation.tex
@@ -56,7 +56,7 @@ Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multis
 cript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.096 seconds
+luaotfload | main : initialization completed in 0.095 seconds
 (/usr/share/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2019/09/29 v3.57 A class for typesetting presentations
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
@@ -1622,27 +1622,18 @@ d on input line 26.
 <./graphics/screenshots/Aufgabe3/auge_sendesignal.PNG>] [11
 
 ])
-(./slides/Aufgabe4.tex
-<graphics/screenshots/Aufgabe4/sendefilter_impulsantwort.pdf, id=1223, 573.46246
-pt x 347.13693pt>
-File: graphics/screenshots/Aufgabe4/sendefilter_impulsantwort.pdf Graphic file (
-type pdf)
-<use graphics/screenshots/Aufgabe4/sendefilter_impulsantwort.pdf>
-Package luatex.def Info: graphics/screenshots/Aufgabe4/sendefilter_impulsantwort
-.pdf  used on input line 14.
-(luatex.def)             Requested size: 199.1693pt x 120.5622pt.
- [12
+(./slides/Aufgabe4.tex [12
 
-<./graphics/screenshots/Aufgabe4/sendefilter_impulsantwort.pdf>] [13
+] [13
 
 ]) (./slides/Aufgabe5.tex
-<graphics/screenshots/Aufgabe5/1.jpg, id=1329, 237.0456pt x 231.5049pt>
+<graphics/screenshots/Aufgabe5/1.jpg, id=1296, 237.0456pt x 231.5049pt>
 File: graphics/screenshots/Aufgabe5/1.jpg Graphic file (type jpg)
 <use graphics/screenshots/Aufgabe5/1.jpg>
 Package luatex.def Info: graphics/screenshots/Aufgabe5/1.jpg  used on input line
  17.
 (luatex.def)             Requested size: 199.1693pt x 194.52283pt.
-<graphics/screenshots/Aufgabe5/2.jpg, id=1330, 352.6776pt x 235.1184pt>
+<graphics/screenshots/Aufgabe5/2.jpg, id=1297, 352.6776pt x 235.1184pt>
 File: graphics/screenshots/Aufgabe5/2.jpg Graphic file (type jpg)
 <use graphics/screenshots/Aufgabe5/2.jpg>
 Package luatex.def Info: graphics/screenshots/Aufgabe5/2.jpg  used on input line
@@ -1651,13 +1642,13 @@ Package luatex.def Info: graphics/screenshots/Aufgabe5/2.jpg  used on input line
  [14
 
 <./graphics/screenshots/Aufgabe5/1.JPG><./graphics/screenshots/Aufgabe5/2.JPG>]
-<graphics/screenshots/Aufgabe6/1.jpg, id=1367, 231.264pt x 231.5049pt>
+<graphics/screenshots/Aufgabe6/1.jpg, id=1334, 231.264pt x 231.5049pt>
 File: graphics/screenshots/Aufgabe6/1.jpg Graphic file (type jpg)
 <use graphics/screenshots/Aufgabe6/1.jpg>
 Package luatex.def Info: graphics/screenshots/Aufgabe6/1.jpg  used on input line
  35.
 (luatex.def)             Requested size: 199.1693pt x 199.38704pt.
-<graphics/screenshots/Aufgabe6/2.jpg, id=1368, 360.6273pt x 227.4096pt>
+<graphics/screenshots/Aufgabe6/2.jpg, id=1335, 360.6273pt x 227.4096pt>
 File: graphics/screenshots/Aufgabe6/2.jpg Graphic file (type jpg)
 <use graphics/screenshots/Aufgabe6/2.jpg>
 Package luatex.def Info: graphics/screenshots/Aufgabe6/2.jpg  used on input line
@@ -1666,9 +1657,9 @@ Package luatex.def Info: graphics/screenshots/Aufgabe6/2.jpg  used on input line
  [15
 
 <./graphics/screenshots/Aufgabe6/1.JPG><./graphics/screenshots/Aufgabe6/2.JPG>]
-) (./slides/Aufgabe6.tex)
-(./slides/Aufgabe7.tex
-<graphics/screenshots/Aufgabe7/modell.pdf, id=1406, 820.33736pt x 399.36865pt>
+)
+(./slides/Aufgabe6.tex) (./slides/Aufgabe7.tex
+<graphics/screenshots/Aufgabe7/modell.pdf, id=1373, 820.33736pt x 399.36865pt>
 File: graphics/screenshots/Aufgabe7/modell.pdf Graphic file (type pdf)
 <use graphics/screenshots/Aufgabe7/modell.pdf>
 Package luatex.def Info: graphics/screenshots/Aufgabe7/modell.pdf  used on input
@@ -1676,15 +1667,14 @@ Package luatex.def Info: graphics/screenshots/Aufgabe7/modell.pdf  used on input
 (luatex.def)             Requested size: 398.3386pt x 193.92513pt.
  [16
 
-<./graphics/screenshots/Aufgabe7/modell.pdf>]
-[17
+<./graphics/screenshots/Aufgabe7/modell.pdf>] [17
 
 ]) (./slides/Aufgabe8.tex [18
 
 ] [19
 
 ]
-<graphics/screenshots/Aufgabe8/Auge_ohne_entzerrer.png, id=2648, 667.74469pt x 4
+<graphics/screenshots/Aufgabe8/Auge_ohne_entzerrer.png, id=2614, 667.74469pt x 4
 45.665pt>
 File: graphics/screenshots/Aufgabe8/Auge_ohne_entzerrer.png Graphic file (type p
 ng)
@@ -1692,7 +1682,7 @@ ng)
 Package luatex.def Info: graphics/screenshots/Aufgabe8/Auge_ohne_entzerrer.png  
 used on input line 40.
 (luatex.def)             Requested size: 199.1693pt x 132.9253pt.
-<graphics/screenshots/Aufgabe8/Auge_mit_entzerrer.png, id=2649, 665.48625pt x 44
+<graphics/screenshots/Aufgabe8/Auge_mit_entzerrer.png, id=2615, 665.48625pt x 44
 6.41782pt>
 File: graphics/screenshots/Aufgabe8/Auge_mit_entzerrer.png Graphic file (type pn
 g)
@@ -1703,11 +1693,10 @@ sed on input line 40.
  [20
 
 <./graphics/screenshots/Aufgabe8/Auge_ohne_entzerrer.PNG><./graphics/screenshots
-/Aufgabe8/Auge_mit_entzerrer.PNG>]
-[21
+/Aufgabe8/Auge_mit_entzerrer.PNG>] [21
 
 ]
-<graphics/screenshots/Aufgabe8/BER.jpg, id=2725, 1683.28876pt x 1003.75pt>
+<graphics/screenshots/Aufgabe8/BER.jpg, id=2692, 1683.28876pt x 1003.75pt>
 File: graphics/screenshots/Aufgabe8/BER.jpg Graphic file (type jpg)
 <use graphics/screenshots/Aufgabe8/BER.jpg>
 Package luatex.def Info: graphics/screenshots/Aufgabe8/BER.jpg  used on input li
@@ -1715,23 +1704,23 @@ ne 65.
 (luatex.def)             Requested size: 246.17175pt x 146.78827pt.
  [22
 
-<./graphics/screenshots/Aufgabe8/BER.JPG>]) (./slides/Aufgabe9.tex
-<graphics/screenshots/Aufgabe9/Augendiagramm1.png, id=2764, 422.32782pt x 299.61
+<./graphics/screenshots/Aufgabe8/BER.JPG>])
+(./slides/Aufgabe9.tex
+<graphics/screenshots/Aufgabe9/Augendiagramm1.png, id=2730, 422.32782pt x 299.61
 937pt>
 File: graphics/screenshots/Aufgabe9/Augendiagramm1.png Graphic file (type png)
 <use graphics/screenshots/Aufgabe9/Augendiagramm1.png>
 Package luatex.def Info: graphics/screenshots/Aufgabe9/Augendiagramm1.png  used 
 on input line 16.
 (luatex.def)             Requested size: 199.1693pt x 141.30116pt.
-<graphics/screenshots/Aufgabe9/Augendiagramm2.png, id=2765, 420.82219pt x 301.12
+<graphics/screenshots/Aufgabe9/Augendiagramm2.png, id=2731, 420.82219pt x 301.12
 5pt>
 File: graphics/screenshots/Aufgabe9/Augendiagramm2.png Graphic file (type png)
 <use graphics/screenshots/Aufgabe9/Augendiagramm2.png>
 Package luatex.def Info: graphics/screenshots/Aufgabe9/Augendiagramm2.png  used 
 on input line 16.
 (luatex.def)             Requested size: 199.1693pt x 142.51663pt.
-
-[23
+ [23
 
 <./graphics/screenshots/Aufgabe9/Augendiagramm1.PNG><./graphics/screenshots/Aufg
 abe9/Augendiagramm2.PNG>])
@@ -1758,15 +1747,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39281 strings out of 493864
+ 39266 strings out of 493864
  100000,1144653 words of node,token memory allocated
  10235 words of node memory still in use:
    200 hlist, 15 vlist, 7 rule, 10 disc, 9 local_par, 4 math, 241 glue, 63 kern,
  24 penalty, 91 glyph, 731 attribute, 67 glue_spec, 731 attribute_list, 4 write,
  332 pdf_literal, 31 pdf_start_link, 31 pdf_end_link, 31 pdf_action, 114 pdf_col
 orstack, 2 pdf_setmatrix, 2 pdf_save, 2 pdf_restore nodes
-   avail lists: 1:3,2:1596,3:428,4:349,5:273,6:49,7:1033,8:37,9:692,10:10,11:39
- 42189 multiletter control sequences out of 65536+600000
+   avail lists: 1:3,2:1596,3:418,4:349,5:273,6:49,7:1033,8:37,9:692,10:10,11:39
+ 42183 multiletter control sequences out of 65536+600000
  90 fonts using 12431423 bytes
  58i,23n,78p,778b,1302s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf-dist/fonts/opentype/public/tex-gyre/texgyreheros-italic.otf></
@@ -1780,10 +1769,10 @@ sfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
 b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/
 type1/public/amsfonts/latxfont/lcircle1.pfb>
-Output written on presentation.pdf (23 pages, 3911036 bytes).
+Output written on presentation.pdf (23 pages, 3748818 bytes).
 
-PDF statistics: 2861 PDF objects out of 2984 (max. 8388607)
- 2113 compressed objects within 22 object streams
+PDF statistics: 2827 PDF objects out of 2984 (max. 8388607)
+ 2093 compressed objects within 21 object streams
  56 named destinations out of 1000 (max. 131072)
  88 words of extra memory for PDF output out of 10000 (max. 100000000)
 
